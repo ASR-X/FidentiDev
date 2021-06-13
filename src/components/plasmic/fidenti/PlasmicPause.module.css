@@ -1,0 +1,6 @@
+.root {
+  object-fit: cover;
+  width: 40%;
+  height: 20%;
+  position: relative;
+}

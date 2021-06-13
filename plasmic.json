@@ -1,0 +1,284 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+      "projectName": "fidenti",
+      "version": "latest",
+      "cssFilePath": "plasmic/fidenti/plasmic_fidenti.module.css",
+      "components": [
+        {
+          "id": "MpybEgo5UgkM",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "TTI1JEnzco",
+          "name": "Mode",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicMode.tsx",
+          "importSpec": {
+            "modulePath": "Mode.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicMode.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "C4Svn72q0K",
+          "name": "Mode2",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicMode2.tsx",
+          "importSpec": {
+            "modulePath": "Mode2.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicMode2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "k35rev7lCb",
+          "name": "Back",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicBack.tsx",
+          "importSpec": {
+            "modulePath": "Back.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicBack.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "yXGuMQsgCK",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicHome.tsx",
+          "importSpec": {
+            "modulePath": "Home.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "ZZYuD1kwGj",
+          "name": "Recording",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicRecording.tsx",
+          "importSpec": {
+            "modulePath": "Recording.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicRecording.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "-s6EJFyC7E",
+          "name": "Pause",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicPause.tsx",
+          "importSpec": {
+            "modulePath": "Pause.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicPause.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "8CN2TXi9_d",
+          "name": "Cancel",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicCancel.tsx",
+          "importSpec": {
+            "modulePath": "Cancel.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicCancel.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "wiKeBsYJZc",
+          "name": "MicButton2",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicMicButton2.tsx",
+          "importSpec": {
+            "modulePath": "MicButton2.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicMicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "S99cyKldKN",
+          "name": "FidentiBox",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicFidentiBox.tsx",
+          "importSpec": {
+            "modulePath": "FidentiBox.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicFidentiBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "294nf39QYm",
+          "name": "Textbox",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicTextbox.tsx",
+          "importSpec": {
+            "modulePath": "Textbox.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicTextbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "MIo-gqCJB6",
+          "name": "XButton3",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicXButton3.tsx",
+          "importSpec": {
+            "modulePath": "XButton3.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicXButton3.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "UZJ7ivhMO2J",
+          "name": "Mode3",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicMode3.tsx",
+          "importSpec": {
+            "modulePath": "Mode3.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicMode3.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "jFhxioJa-O",
+          "name": "ModeTitle2",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicModeTitle2.tsx",
+          "importSpec": {
+            "modulePath": "ModeTitle2.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicModeTitle2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "fmg2kCtHOo",
+          "name": "NameBox",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicNameBox.tsx",
+          "importSpec": {
+            "modulePath": "NameBox.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicNameBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "tCcSNI0-Q",
+          "name": "BackArrowsvgIcon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__BackArrowsvg.tsx"
+        },
+        {
+          "id": "M3YhKXIh-",
+          "name": "HomesvgIcon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__Homesvg.tsx"
+        },
+        {
+          "id": "HqeMbdstf",
+          "name": "Mic1SvgIcon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__Mic1Svg.tsx"
+        },
+        {
+          "id": "YhFAUigc_",
+          "name": "PauseIcon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__Pause.tsx"
+        },
+        {
+          "id": "-3S9AjX37",
+          "name": "CancelsvgIcon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__Cancelsvg.tsx"
+        },
+        {
+          "id": "EFWR2w_hX",
+          "name": "Untitled2SvgIcon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__Untitled2Svg.tsx"
+        },
+        {
+          "id": "lBkofumzr",
+          "name": "Untitled2Svg2Icon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__Untitled2Svg2.tsx"
+        },
+        {
+          "id": "Au8umHxTs",
+          "name": "Untitled2Svg3Icon",
+          "moduleFilePath": "plasmic/fidenti/icons/PlasmicIcon__Untitled2Svg3.tsx"
+        }
+      ],
+      "images": [],
+      "projectApiToken": "pT8Noja37ZIIS0qIFQG8AAdxuQ2N1WV1weLOvK23HPkPX693lrcFMhQMlgGdKpbEh7yft67GGXDtTQAy71zbQ"
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "wgae7VV65k-u",
+        "name": "Screen",
+        "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+        "contextFilePath": "plasmic/fidenti/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "cliVersion": "0.1.152",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.152/dist/plasmic.schema.json"
+}

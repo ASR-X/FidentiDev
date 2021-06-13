@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  width: 10em;
+  height: 10em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  position: relative;
+  border-radius: 300%;
+  padding: 35%;
+  background: #ffffff;
+  border: 5px solid #cbafa5;
+}
+.root:active {
+  box-shadow: inset 2px 5px 10px 10px #00000021;
+  background: #fffcfc no-repeat;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  width: 5em;
+  height: 5em;
+  flex-shrink: 0;
+}

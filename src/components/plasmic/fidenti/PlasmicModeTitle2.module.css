@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 5%;
+}
+.slotChildren {
+  font-size: 4em;
+  font-weight: 300;
+}

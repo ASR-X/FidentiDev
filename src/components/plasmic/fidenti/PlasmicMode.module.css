@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  position: relative;
+}
+.slotChildren {
+  text-align: center;
+  color: #b89d94;
+}
+.root:hover .slotChildren {
+  font-weight: 400;
+}

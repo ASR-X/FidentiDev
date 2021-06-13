@@ -1,0 +1,149 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 0;
+  min-height: 0;
+  background: #1c1b1d;
+}
+.box__hmGWl {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  left: auto;
+  top: auto;
+  min-width: 0;
+  min-height: 0;
+}
+.home:global(.__wab_instance) {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 5%;
+  height: 5%;
+}
+.box__nLtAv {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  min-width: 0;
+  padding: 5%;
+}
+.box__wrsTo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.box__wrsTo > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(0px - 50%);
+  height: calc(100% + 50%);
+}
+.box__wrsTo > :global(.__wab_flex-container) > *,
+.box__wrsTo > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 50%;
+}
+.classic:global(.__wab_instance) {
+  position: relative;
+}
+.box___3Elo {
+  height: auto;
+  font-weight: 400;
+}
+.root .box___3Elo:hover {
+  color: #ffffff;
+}
+.umolympics:global(.__wab_instance) {
+  position: relative;
+}
+.box___0EZdw {
+  height: auto;
+}
+.root .box___0EZdw:hover {
+  color: #ffffff;
+}
+.recitation:global(.__wab_instance) {
+  position: relative;
+}
+.box__xvz9W {
+  height: auto;
+}
+.root .box__xvz9W:hover {
+  color: #ffffff;
+}
+.analysis:global(.__wab_instance) {
+  position: relative;
+}
+.root .box__t0Pnf:hover {
+  color: #ffffff;
+}
+.box__fttse {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 5%;
+}
+.box__fttse > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: calc(0px - 20%);
+  height: calc(100% + 20%);
+}
+.box__fttse > :global(.__wab_flex-container) > *,
+.box__fttse > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 20%;
+}
+.modeTitle2:global(.__wab_instance) {
+  position: relative;
+}
+.nameBox:global(.__wab_instance) {
+  position: relative;
+}
+.nameBox:global(.__wab_instance) {
+  position: relative;
+}
+.micButton2:global(.__wab_instance) {
+  position: relative;
+  flex-shrink: 0;
+}
+.box__wb6F1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 5%;
+}
+.textbox {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  min-width: 0;
+  padding: 5%;
+  background: transparent repeat;
+  border: 1% solid #cbafa5;
+}
