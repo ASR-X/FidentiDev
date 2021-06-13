@@ -1,46 +1,22 @@
-# Getting Started with Create React App
+## Inspiration
+From showing up to interviews to performing well at school debates, we have all experienced how difficult it is to be confident. Oftentimes, as debaters, we do long, time consuming drills to develop our confidence, oftentimes requiring the help of one or more friends. Fidenti came from our realization that a lot of this feedback can be given through the computer.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+Helps to train speaking skills and confidence with the help of text-to-speech and AI-powered eye tracking. Eye tracking helps you maintain eye contact while text-to-speech has **many different modes** that allow powerful analysis of word frequency, filler word filtering, and text matching with a provided script. 
 
-## Available Scripts
+## How we built it
+We combined many different platforms to create Fidenti. Text to speech is done with IBM Watson, while AI eye analysis is powered by a custom deep learning algorithm. The frontend was made using React and Plasmic. Python is used to process and analyze transcript data. Throughout the project, we split the features we wanted to implement among ourselves and worked separately, integrating in the end.
 
-In the project directory, you can run:
+## Challenges we ran into
+Obtaining API keys and dealing with free licenses and limited amounts of calls AI training: finding good training data and processing the end result. React is frustrating and buggy. Working continuously for hours on end with little sleep :) 
 
-### `yarn start`
+## Accomplishments that we're proud of
+I am impressed by the amount of different features we managed to implement, including all of our different modes and the eye tracking. We are also proud of the frontend website built using react as it is one of the most polished and good-looking websites we have managed to create so far.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What we learned
+We learned a lot about frontend development, including consistent theming, the use of Plasmic, and cooperation with Git. We also learned about AI image processing, text to speech, and text analysis.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## What's next for Fidenti
+We plan to implement a lot more features, including posture/gestures detection: analyzing posture using AI so you can portray confidence with your stance, online connection to help you compete in online leaderboard for additional motivation more modes, analysis mode that replays past speeches, distraction mode trains you to ignore sounds and other distractions
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
