@@ -11,7 +11,7 @@
   min-height: 0;
   background: #1c1b1d;
 }
-.box__hmGWl {
+.box__iGnk8 {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -30,8 +30,9 @@
   top: 5%;
   width: 5%;
   height: 5%;
+  align-self: auto;
 }
-.box__nLtAv {
+.box__oytKf {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -42,48 +43,45 @@
   min-width: 0;
   padding: 5%;
 }
-.box__wrsTo {
+.box__etvzI {
   display: flex;
   position: relative;
   flex-direction: column;
 }
-.box__wrsTo > :global(.__wab_flex-container) {
+.box__etvzI > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: calc(0px - 50%);
   height: calc(100% + 50%);
 }
-.box__wrsTo > :global(.__wab_flex-container) > *,
-.box__wrsTo > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.box__etvzI > :global(.__wab_flex-container) > *,
+.box__etvzI > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-top: 50%;
 }
 .classic:global(.__wab_instance) {
   position: relative;
 }
-.box___3Elo {
+.box__eopj {
   height: auto;
   font-weight: 400;
 }
-.root .box___3Elo:hover {
+.root .box__eopj:hover {
   color: #ffffff;
 }
 .umolympics:global(.__wab_instance) {
   position: relative;
 }
-.box___0EZdw {
-  height: auto;
-}
-.root .box___0EZdw:hover {
+.root .box__eE7Hg:hover {
   color: #ffffff;
 }
 .analysis:global(.__wab_instance) {
   position: relative;
 }
-.root .box__t0Pnf:hover {
+.root .box___8Jht:hover {
   color: #ffffff;
 }
-.box__fttse {
+.box__yJhwu {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -93,55 +91,35 @@
   min-height: 0;
   padding: 5%;
 }
-.box__fttse > :global(.__wab_flex-container) {
+.box__yJhwu > :global(.__wab_flex-container) {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   margin-top: calc(0px - 20%);
   height: calc(100% + 20%);
 }
-.box__fttse > :global(.__wab_flex-container) > *,
-.box__fttse > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.box__yJhwu > :global(.__wab_flex-container) > *,
+.box__yJhwu > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-top: 20%;
 }
-.modeTitle2:global(.__wab_instance) {
+.modetitle:global(.__wab_instance) {
   position: relative;
 }
-.badnamebox:global(.__wab_instance) {
+.runBox:global(.__wab_instance) {
   position: relative;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
 }
-.textbox__aeJh {
-  position: relative;
-  width: auto;
-  height: auto;
-  border-bottom-width: 0%;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-top-width: 0px;
-  background: transparent repeat;
-  border-style: solid;
-  border-color: #cbafa5;
-}
-.micButton2:global(.__wab_instance) {
-  position: relative;
-  flex-shrink: 0;
-}
-.box__wb6F1 {
+.box__hy0Yt {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
-  height: 100%;
   min-width: 0;
-  min-height: 0;
-  padding: 5%;
-}
-.script:global(.__wab_instance) {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  min-width: 0;
-  min-height: 0;
+  padding: 6%;
 }

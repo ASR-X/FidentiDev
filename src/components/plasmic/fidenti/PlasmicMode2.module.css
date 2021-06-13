@@ -75,15 +75,6 @@
 .root .box__rT2J:hover {
   color: #ffffff;
 }
-.recitation:global(.__wab_instance) {
-  position: relative;
-}
-.box__t2Spj {
-  height: auto;
-}
-.root .box__t2Spj:hover {
-  color: #ffffff;
-}
 .analysis:global(.__wab_instance) {
   position: relative;
 }
@@ -114,7 +105,7 @@
 .modetitle:global(.__wab_instance) {
   position: relative;
 }
-.nameBox:global(.__wab_instance) {
+.name:global(.__wab_instance) {
   position: relative;
 }
 .micButton2:global(.__wab_instance) {

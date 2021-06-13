@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  min-width: 0;
+  padding: 5%;
+}
+.run__zFjqk:global(.__wab_instance) {
+  position: relative;
+  align-self: center;
+}
+.run1 {
+  font-size: 200%;
+}
+.root .run1:hover {
+  color: #ffffff;
+}
+.run__bnX2F:global(.__wab_instance) {
+  position: relative;
+  align-self: center;
+}
+.run2 {
+  height: auto;
+  font-size: 200%;
+}
+.root .run2:hover {
+  color: #ffffff;
+}
+.run___7Dk5T:global(.__wab_instance) {
+  position: relative;
+  align-self: center;
+}
+.box {
+  font-size: 200%;
+}
+.root .box:hover {
+  color: #ffffff;
+}

@@ -6,6 +6,7 @@ import {Classic} from "./pages/Classic"
 import { UmOlympics } from "./pages/UmOlympics";
 import { Recitation } from "./pages/Recitation";
 import { Progress } from "./pages/Progress";
+import { Analysis } from "./pages/Analysis";
 
 
 const App = () => {
@@ -17,8 +18,7 @@ const App = () => {
       <Route path="/umolympics"><UmOlympics/></Route>
       <Route path="/recitation"><Recitation/></Route>
       <Route path="/progress"><Progress/></Route>
-      {/* <Route path="/analysis"><Analysis /></Route>
-      <Route path="/progress"><Progress /></Route> */}
+      <Route path="/analysis"><Analysis /></Route>
     </>
   );
 }

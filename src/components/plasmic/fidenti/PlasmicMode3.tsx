@@ -32,8 +32,9 @@ import {
 import Home from "../../Home"; // plasmic-import: yXGuMQsgCK/component
 import Mode from "../../Mode"; // plasmic-import: TTI1JEnzco/component
 import ModeTitle2 from "../../ModeTitle2"; // plasmic-import: jFhxioJa-O/component
-import NameBox from "../../NameBox"; // plasmic-import: fmg2kCtHOo/component
+import Badnamebox from "../../Badnamebox"; // plasmic-import: fmg2kCtHOo/component
 import MicButton2 from "../../MicButton2"; // plasmic-import: wiKeBsYJZc/component
+import Script from "../../Script"; // plasmic-import: uzzvCxxOdE/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
@@ -55,12 +56,11 @@ export type PlasmicMode3__OverridesType = {
   home?: p.Flex<typeof Home>;
   classic?: p.Flex<typeof Mode>;
   umolympics?: p.Flex<typeof Mode>;
-  recitation?: p.Flex<typeof Mode>;
   analysis?: p.Flex<typeof Mode>;
   modeTitle2?: p.Flex<typeof ModeTitle2>;
-  nameBox?: p.Flex<typeof NameBox>;
+  badnamebox?: p.Flex<typeof Badnamebox>;
   micButton2?: p.Flex<typeof MicButton2>;
-  textbox?: p.Flex<"input">;
+  script?: p.Flex<typeof Script>;
 };
 
 export interface DefaultMode3Props {
@@ -139,22 +139,6 @@ function PlasmicMode3__RenderFunc(props: {
                 </Mode>
 
                 <Mode
-                  data-plasmic-name={"recitation"}
-                  data-plasmic-override={overrides.recitation}
-                  className={classNames("__wab_instance", sty.recitation)}
-                >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.box__xvz9W
-                    )}
-                  >
-                    {"recitation"}
-                  </div>
-                </Mode>
-
-                <Mode
                   data-plasmic-name={"analysis"}
                   data-plasmic-override={overrides.analysis}
                   className={classNames("__wab_instance", sty.analysis)}
@@ -183,10 +167,10 @@ function PlasmicMode3__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.modeTitle2)}
               />
 
-              <NameBox
-                data-plasmic-name={"nameBox"}
-                data-plasmic-override={overrides.nameBox}
-                className={classNames("__wab_instance", sty.nameBox)}
+              <Badnamebox
+                data-plasmic-name={"badnamebox"}
+                data-plasmic-override={overrides.badnamebox}
+                className={classNames("__wab_instance", sty.badnamebox)}
               />
 
               <MicButton2
@@ -197,14 +181,10 @@ function PlasmicMode3__RenderFunc(props: {
             </p.Stack>
 
             <div className={classNames(defaultcss.all, sty.box__wb6F1)}>
-              <input
-                data-plasmic-name={"textbox"}
-                data-plasmic-override={overrides.textbox}
-                className={classNames(defaultcss.input, sty.textbox)}
-                placeholder={"" as const}
-                size={1 as const}
-                type={"text" as const}
-                value={"your speech here..." as const}
+              <Script
+                data-plasmic-name={"script"}
+                data-plasmic-override={overrides.script}
+                className={classNames("__wab_instance", sty.script)}
               />
             </div>
           </div>
@@ -220,22 +200,20 @@ const PlasmicDescendants = {
     "home",
     "classic",
     "umolympics",
-    "recitation",
     "analysis",
     "modeTitle2",
-    "nameBox",
+    "badnamebox",
     "micButton2",
-    "textbox"
+    "script"
   ],
   home: ["home"],
   classic: ["classic"],
   umolympics: ["umolympics"],
-  recitation: ["recitation"],
   analysis: ["analysis"],
   modeTitle2: ["modeTitle2"],
-  nameBox: ["nameBox"],
+  badnamebox: ["badnamebox"],
   micButton2: ["micButton2"],
-  textbox: ["textbox"]
+  script: ["script"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -245,12 +223,11 @@ type NodeDefaultElementType = {
   home: typeof Home;
   classic: typeof Mode;
   umolympics: typeof Mode;
-  recitation: typeof Mode;
   analysis: typeof Mode;
   modeTitle2: typeof ModeTitle2;
-  nameBox: typeof NameBox;
+  badnamebox: typeof Badnamebox;
   micButton2: typeof MicButton2;
-  textbox: "input";
+  script: typeof Script;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -317,12 +294,11 @@ export const PlasmicMode3 = Object.assign(
     home: makeNodeComponent("home"),
     classic: makeNodeComponent("classic"),
     umolympics: makeNodeComponent("umolympics"),
-    recitation: makeNodeComponent("recitation"),
     analysis: makeNodeComponent("analysis"),
     modeTitle2: makeNodeComponent("modeTitle2"),
-    nameBox: makeNodeComponent("nameBox"),
+    badnamebox: makeNodeComponent("badnamebox"),
     micButton2: makeNodeComponent("micButton2"),
-    textbox: makeNodeComponent("textbox"),
+    script: makeNodeComponent("script"),
 
     // Metadata about props expected for PlasmicMode3
     internalVariantProps: PlasmicMode3__VariantProps,

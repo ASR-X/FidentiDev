@@ -70,13 +70,10 @@
 .root .box__xhpCi:hover {
   color: #ffffff;
 }
-.mode3:global(.__wab_instance) {
+.mode:global(.__wab_instance) {
   position: relative;
   align-self: center;
 }
-.box__fXk2R {
-  font-weight: 400;
-}
-.root .box__fXk2R:hover {
+.root .box__aaZ5G:hover {
   color: #ffffff;
 }

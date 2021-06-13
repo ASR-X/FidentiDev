@@ -210,15 +210,106 @@
           "componentType": "component"
         },
         {
-          "id": "fmg2kCtHOo",
-          "name": "NameBox",
+          "id": "KRwSeJjW7Eq",
+          "name": "Mode4",
           "type": "managed",
           "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
-          "renderModuleFilePath": "plasmic/fidenti/PlasmicNameBox.tsx",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicMode4.tsx",
           "importSpec": {
-            "modulePath": "NameBox.tsx"
+            "modulePath": "Mode4.tsx"
           },
-          "cssFilePath": "plasmic/fidenti/PlasmicNameBox.module.css",
+          "cssFilePath": "plasmic/fidenti/PlasmicMode4.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "WNRpjvCUBo",
+          "name": "Run",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicRun.tsx",
+          "importSpec": {
+            "modulePath": "Run.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicRun.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "adxIUkabTF",
+          "name": "RunBox",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicRunBox.tsx",
+          "importSpec": {
+            "modulePath": "RunBox.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicRunBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "AEh8gMdRh2",
+          "name": "Runanalysis",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicRunanalysis.tsx",
+          "importSpec": {
+            "modulePath": "Runanalysis.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicRunanalysis.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "uzzvCxxOdE",
+          "name": "Script",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicScript.tsx",
+          "importSpec": {
+            "modulePath": "Script.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicScript.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "fCWWx9yiYh",
+          "name": "Box",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicBox.tsx",
+          "importSpec": {
+            "modulePath": "Box.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "fmg2kCtHOo",
+          "name": "Badnamebox",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicBadnamebox.tsx",
+          "importSpec": {
+            "modulePath": "Badnamebox.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicBadnamebox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "aW1AvuAqPk",
+          "name": "Namebox",
+          "type": "managed",
+          "projectId": "wNxtZcFa8F4mXc5wMcFAw1",
+          "renderModuleFilePath": "plasmic/fidenti/PlasmicNamebox.tsx",
+          "importSpec": {
+            "modulePath": "Namebox.tsx"
+          },
+          "cssFilePath": "plasmic/fidenti/PlasmicNamebox.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

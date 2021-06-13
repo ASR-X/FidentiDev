@@ -1,6 +1,6 @@
 import {AudioSpectrum} from '../components/AudioSpectrum'
 import {SpeechRecognition} from '../components/SpeechRecognition'
-import React, { useEffect, useRef, FunctionComponent, useState, useCallback } from 'react';
+import React, { useEffect, useRef, FunctionComponent, useState, useMemo } from 'react';
 import '../styles/recording.css';
 import {PlasmicPause,} from "../components/plasmic/fidenti/PlasmicPause";
 import {PlasmicCancel,} from "../components/plasmic/fidenti/PlasmicCancel";
@@ -11,6 +11,8 @@ import { io } from "socket.io-client";
 import SocketIOFileUpload from "socketio-file-upload";
 
 import {v4 as uuidv4} from 'uuid';
+import { useQuery } from '../utils/hooks';
+import { useHistory } from 'react-router-dom';
 
 
 export const Recording:FunctionComponent = () => {
@@ -23,10 +25,21 @@ export const Recording:FunctionComponent = () => {
   };
   const [blob, setBlob] = useState(null as any)
   const [status, setStatus] = useState(null as any)
+  const [record, setRecord] = useState(false)
   const startRec = useRef(null as any)
   const openRec = useRef(null as any)
   const blobRec = useRef(null as any)
   const stopRec = useRef(null as any)
+  const history = useHistory();
+
+  const query = useQuery()
+  const memoQ = useMemo(
+    () => 
+    {
+      return {mode: query.get('mode'), run: query.get('run')}
+    }
+  ,[query]);
+
 
   const blobToFile = (theBlob: any, fileName:string): File => {
     var b: any = theBlob
@@ -40,29 +53,37 @@ export const Recording:FunctionComponent = () => {
 
   useEffect(() => {
     if (blob) {
-      const socket = io("http://asrx.ngrok.io", {transports: ['websocket']});
+      //const socket = io("http://asrx.ngrok.io", {transports: ['websocket']});
       // const socket = io("http://localhost:4567", {transports: ['websocket']});
 
       console.log(blob)
-      socket.on('connect', () => {
-        console.log("connected")
-        var uploader = new SocketIOFileUpload(socket);
-        uploader.addEventListener("error", function(event:any){
-          console.log(event.message);
-          if (event.code === 1) {
-            alert("Don't upload such a big file");
-          }
-        });
-        var file:File = blobToFile(blob, uuidv4())
-        uploader.useBuffer = true;
-        uploader.submitFiles([file])
+      // socket.on('connect', () => {
+      //   console.log("connected")
+      //   var uploader = new SocketIOFileUpload(socket);
+      //   uploader.addEventListener("error", function(event:any){
+      //     console.log(event.message);
+      //     if (event.code === 1) {
+      //       alert("Don't upload such a big file");
+      //     }
+      //   });
+      //   var file:File = blobToFile(blob, uuidv4())
+      //   uploader.useBuffer = true;
+      //   uploader.submitFiles([file])
 
-      });
+      // });
 
-      socket.on('response', data=> {
-        console.log(data)
-      });
+      // socket.on('response', data=> {
+      //   console.log(data)
+      // });
       
+
+      setRecord(true)
+      setTimeout( 
+        () =>
+        console.log(record)
+      ,10000)
+      
+
     }
   },[blob]);
 
@@ -109,7 +130,7 @@ return (
           <canvas ref={analyserCanvas} className="visualizer"></canvas>
           <div className="text-container">
             <div className="text-span">
-                <SpeechRecognition /> 
+                <SpeechRecognition props={{record}}/> 
             </div>
           </div>
       </div>
@@ -136,9 +157,15 @@ return (
       </div>
     </div>
     <div className="control-container">
-      <PlasmicCancel root = {{onClick: async() => {
-        stopRec.current.click()
-      }}}/>
+      {
+        memoQ.mode !== "umolympics" ?
+        <PlasmicCancel root = {{onClick: async() => {
+          stopRec.current.click()
+        }}}/>
+        :
+        <></>
+      }
+      
     </div>
   </>
   );

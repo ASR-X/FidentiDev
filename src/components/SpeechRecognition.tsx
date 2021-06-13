@@ -1,10 +1,28 @@
-import React, {useState, useRef, useEffect, useCallback, FunctionComponent} from 'react';
+import React, {useState, useRef, useEffect, useCallback, FunctionComponent, useMemo} from 'react';
 import recognizeMicrophone from 'watson-speech/speech-to-text/recognize-microphone';
 import {Transcript} from './Transcript'
+import { useHistory } from 'react-router-dom';
+import { useLocalStorage, useQuery } from '../utils/hooks';
 
 
-export const SpeechRecognition:FunctionComponent = () => {
+
+export const SpeechRecognition:FunctionComponent<{props:any}> = ({props}) => {
+    const history = useHistory();
     const stream = useRef(null as any)
+
+    useEffect(
+      () => (console.log("Speech Rec", props))
+    )
+  
+    const query = useQuery();
+    const memoQ = useMemo(
+      () => 
+      {
+        return {mode: query.get('mode'), run: query.get('run')}
+      }
+    ,[query]);
+    const [results, setResults] = useLocalStorage(memoQ.run, "");
+    const [runs, setRuns] = useLocalStorage("runs", []);
     
     const [state, setState] = useState({
         model: 'en-US_BroadbandModel',
@@ -60,7 +78,7 @@ export const SpeechRecognition:FunctionComponent = () => {
           // note: in normal usage, you'd probably set this a bit higher
           wordAlternativesThreshold: 0.4,
           keywords: keywords,
-          keywordsThreshold: 0.6, // note: in normal usage, you'd probably set this a bit higher
+          keywordsThreshold: 0.4, // note: in normal usage, you'd probably set this a bit higher
           timestamps: true, // set timestamps for each word - automatically turned on by speaker_labels
           // includes the speaker_labels in separate objects unless resultsBySpeaker is enabled
           speakerLabels: state.speakerLabels,
@@ -182,9 +200,42 @@ export const SpeechRecognition:FunctionComponent = () => {
         return state.formattedMessages.filter(r => r.results
           && r.results.length && r.results[0].final);
       }
+      
+      const write = (final:any) => {
+        if (!results && final && final[final.length-1] && final[final.length-1].results && final[final.length-1].results[0] && final[final.length-1].results[0].alternatives && 
+          final[final.length-1].results[0].alternatives[0] && final[final.length-1].results[0].alternatives[0].transcript && final[final.length-1].results[0].alternatives[0].transcript.includes("[HESITATION]")){
+          
+          const results = final.map((msg: { results: any[]; result_index: any; }) => msg.results.map((result: any, i: any) => (
+              result.alternatives[0].transcript
+            ))).reduce((a: string | any[], b: any) => a.concat(b), []);
+          
+          console.log(results)
+          setResults(results)
+          const rest = runs
+          rest.push(memoQ.run)
+
+          if (memoQ.mode === "umolympics") history.replace("/progress?mode=" + memoQ.mode + "&run=" + memoQ.run)
+
+        }
+        else if(!results && final && final[final.length-1] && final[final.length-1].results && final[final.length-1].results[0] && final[final.length-1].results[0].alternatives && 
+          final[final.length-1].results[0].alternatives[0] && final[final.length-1].results[0].alternatives[0].transcript && props.record && !runs.includes(memoQ.run)) {
+            
+          const results = final.map((msg: { results: any[]; result_index: any; }) => msg.results.map((result: any, i: any) => (
+            result.alternatives[0].transcript
+          ))).reduce((a: string | any[], b: any) => a.concat(b), []);
+
+          console.log(results)
+          results.push(memoQ.run)
+          setResults(results)
+          const rest = runs
+          rest.push(memoQ.run)
+          history.replace("/progress?mode=classic" + "&run=" + memoQ.run)
+        }
+      }
 
       const getFinalAndLatestInterimResult = () => {
         const final = getFinalResults();
+        write(final)
         const interim = getCurrentInterimResult();
         if (interim) {
           final.push(interim);

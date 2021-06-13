@@ -1,11 +1,14 @@
-import React, {FunctionComponent } from 'react';
-import Mode3 from '../components/Mode3'
+import React, {FunctionComponent, useState } from 'react';
+import PlasmicMode3 from '../components/plasmic/fidenti/PlasmicMode3'
 import { useHistory } from 'react-router-dom';
+import slug from 'limax';
 
 export const Recitation:FunctionComponent<any> = (props) => {
     const history = useHistory();
+    const [script, setScript] = useState(null as any);
+    const [name, setName] = useState(null as any);
     return (
-        <Mode3
+        <PlasmicMode3
             classic={{
                 onClick: () => {
                 history.push('/classic');
@@ -21,21 +24,36 @@ export const Recitation:FunctionComponent<any> = (props) => {
                 history.push('/recitation');
                 }
             }}
+            home={{
+                onClick: () => {
+                history.push('/');
+                }
+            }}
+            analysis={{ 
+                onClick: () => {
+                    history.push('/analysis');
+                }
+            }}
             modeTitle2={{
                 props: {children: "recitation"}
             }}
             micButton2={{
                 onClick: () => {
-                    history.push('/recording?mode=umolympics');
+                    if(name && script) history.push('/recording?mode=recitation&run=' + slug(name));
                 }
             }}
-            textbox={{
-                as: "input",   
-                props: {
-                     // @ts-ignore: Object is possibly 'null'
-                    onChange: (event : KeyboardEvent)=> setName(event.target.value)} 
-                }
-              }
+            script={{
+                value: script,
+                onChange: (e:any) => {
+                    setScript(e.target.value);
+                },
+            }}
+            name={{
+                value: name,
+                onChange: (e:any) => {
+                    setName(e.target.value);
+                },
+            }}
             {...props}
         />);
 }

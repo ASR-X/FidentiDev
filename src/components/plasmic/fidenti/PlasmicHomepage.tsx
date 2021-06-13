@@ -52,7 +52,7 @@ export type PlasmicHomepage__OverridesType = {
   fidentiBox?: p.Flex<typeof FidentiBox>;
   mode1?: p.Flex<typeof Mode>;
   mode2?: p.Flex<typeof Mode>;
-  mode3?: p.Flex<typeof Mode>;
+  mode?: p.Flex<typeof Mode>;
 };
 
 export interface DefaultHomepageProps {
@@ -67,6 +67,14 @@ function PlasmicHomepage__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode, dataFetches } = props;
+
+  const [isN6582701Hover, triggerN6582701HoverProps] = useTrigger(
+    "useHover",
+    {}
+  );
+  const triggers = {
+    hover_6582701: isN6582701Hover
+  };
 
   return (
     <React.Fragment>
@@ -131,18 +139,19 @@ function PlasmicHomepage__RenderFunc(props: {
                 </Mode>
 
                 <Mode
-                  data-plasmic-name={"mode3"}
-                  data-plasmic-override={overrides.mode3}
-                  className={classNames("__wab_instance", sty.mode3)}
+                  data-plasmic-name={"mode"}
+                  data-plasmic-override={overrides.mode}
+                  className={classNames("__wab_instance", sty.mode)}
                 >
                   <div
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.box__fXk2R
+                      sty.box__aaZ5G
                     )}
+                    data-plasmic-trigger-props={[triggerN6582701HoverProps]}
                   >
-                    {"recitation"}
+                    {triggers.hover_6582701 ? "analysis" : "analysis"}
                   </div>
                 </Mode>
               </p.Stack>
@@ -155,11 +164,11 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "fidentiBox", "mode1", "mode2", "mode3"],
+  root: ["root", "fidentiBox", "mode1", "mode2", "mode"],
   fidentiBox: ["fidentiBox"],
   mode1: ["mode1"],
   mode2: ["mode2"],
-  mode3: ["mode3"]
+  mode: ["mode"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -169,7 +178,7 @@ type NodeDefaultElementType = {
   fidentiBox: typeof FidentiBox;
   mode1: typeof Mode;
   mode2: typeof Mode;
-  mode3: typeof Mode;
+  mode: typeof Mode;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -236,7 +245,7 @@ export const PlasmicHomepage = Object.assign(
     fidentiBox: makeNodeComponent("fidentiBox"),
     mode1: makeNodeComponent("mode1"),
     mode2: makeNodeComponent("mode2"),
-    mode3: makeNodeComponent("mode3"),
+    mode: makeNodeComponent("mode"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

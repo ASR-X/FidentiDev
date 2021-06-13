@@ -3,3 +3,4 @@ declare module 'watson-react-components';
 declare module 'react-router-dom';
 declare module 'socketio-file-upload';
 declare module 'uuid';
+declare module 'radium';

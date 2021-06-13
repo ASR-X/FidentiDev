@@ -1,11 +1,21 @@
 .root {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 5%;
+}
+.textbox__rgTi6 {
+  position: relative;
   width: auto;
   height: auto;
   border-bottom-width: 0%;
   border-right-width: 0px;
   border-left-width: 0px;
   border-top-width: 0px;
-  position: relative;
   background: transparent repeat;
   border-style: solid;
   border-color: #cbafa5;
